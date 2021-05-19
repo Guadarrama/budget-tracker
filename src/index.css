@@ -7,7 +7,42 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+h1{
+  text-align: center;
+}
+.budget-graph{
+  margin: auto;
+  padding: 15px;
+  background-color: red;
+  max-width: 600px;
+  min-height: 100px;
+}
+.add-expense-form{
+  margin: auto;
+  background-color: blue;
+  padding: 15px;
+  max-width: 600px;
+  min-height: 100px;
+}
+label{
+  text-align: right;
+  background-color: aliceblue;
+  margin-left: auto;
 }

@@ -1,23 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import { Expenses } from "./Expenses";
+import { PieChart } from "./PieChart";
+
+const InputForm = e => {
+  return(
+    <div className="add-expense-form">
+      <form>
+        <div>
+          <label>Expense Name:</label>
+          <input type="text" className="title"></input>
+        </div>
+        <div>
+          <label>Description:</label>
+          <input type="text" className="description"></input>
+        </div>
+        <div>
+          <label>Category</label>
+          <input type="text" className="category"></input>
+        </div>
+        <div>
+          <label> Amount:</label>
+          <input type="text" className="amount"></input>
+        </div>
+        <input type="submit"></input>
+      </form>
+    </div>
+  )
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>Budget Tracker</h1>
+      <PieChart />
+      <InputForm />
+      <Expenses />
     </div>
   );
 }
