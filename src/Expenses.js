@@ -2,6 +2,8 @@ import React from "react";
 import "./App.css";
 import { expenseData } from "./data";
 
+
+//expense table
 export const Expenses = () => {
 	return (
 		<table>

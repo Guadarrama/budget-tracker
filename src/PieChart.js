@@ -17,6 +17,7 @@ cloneJsonData.forEach(element => {
 });
 console.log(cloneJsonData);
 
+//new JSON object to index percentages
 cloneJsonData.forEach(element => {
   
 });
