@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "../App.css";
 import { expenseData } from "./data";
 
 
@@ -12,13 +12,15 @@ export const Expenses = () => {
 				<th>Description</th>
 				<th>Category</th>
 				<th>Amount</th>
+				<th>Date</th>
 			</tr>
-			{expenseData.map( stock =>
-				<tr key={stock.key}>
-					<td>{stock.name} </td>
-					<td> {stock.description} </td>
-					<td> {stock.category} </td>
-					<td> $ {stock.amount} </td>
+			{expenseData.map( a =>
+				<tr key={a.key}>
+					<td>{a.name} </td>
+					<td> {a.description} </td>
+					<td> {a.category} </td>
+					<td> $ {a.amount} </td>
+					<td> {a.date} </td>
 				</tr>
 			)}
 		</table>
